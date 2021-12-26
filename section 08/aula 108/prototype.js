@@ -9,8 +9,7 @@ function espera(msg, tempo) {
     if(typeof msg !== "string") reject(new Error("ERRO"))
 
     setTimeout(() => {
-      console.log(msg);
-      resolve()
+      resolve(msg)
     }, tempo);
   });
 }
